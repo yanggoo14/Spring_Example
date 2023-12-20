@@ -33,7 +33,10 @@ public class ReviewBO {
 	public int updateReviewById(int id, String review) {
 		return reviewMapper.updateReviewById(id, review);
 	}
-
-
+	
+	//input: id   output: x  (int rowcount안씀)
+	public void deletdReviewById(int id) {
+		reviewMapper.deletdReviewById(id);
+	}
 
 }
