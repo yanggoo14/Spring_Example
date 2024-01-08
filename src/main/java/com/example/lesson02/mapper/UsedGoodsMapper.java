@@ -2,11 +2,11 @@ package com.example.lesson02.mapper;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
+import org.apache.ibatis.annotations.Mapper;
 
 import com.example.lesson02.domain.UsedGoods;
 
-@Repository
+@Mapper
 public interface UsedGoodsMapper {
 
 	//	input: X (BO로 부터 받아오는게 X)
