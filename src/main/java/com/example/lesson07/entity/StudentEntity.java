@@ -22,7 +22,7 @@ import lombok.ToString;
 @Builder(toBuilder = true) // Setter 대신에 사용  , tobuiler = true > 필드값 변경 허용
 @Getter  // getter 가져오기
 @Table(name = "new_student")  // 테이블명 지정해주기 (jakarta 없으면 javax 선택해주기)
-@Entity // 이 객체는 Entity이다. (JPA - DB)
+@Entity // 이 객체는 Entity이다. (JPA - DB)  테이블처럼 이름을 설정해서 바꿔줄수 있다.
 public class StudentEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
